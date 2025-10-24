@@ -8,7 +8,7 @@ Tested and working with Matlab 2023b with Paraller Processing Toolbox and Statis
 
 # Installation
 Download code.
-run model/BurstyCalculationExample.m
+Run model/BurstyCalculationExample.m
 
 # Example
 
