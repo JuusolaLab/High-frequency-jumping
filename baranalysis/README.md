@@ -53,3 +53,12 @@ Complete set of data consists of the following folders
 - "29-Nov-2020\_Neveen/Musca male 6\_front\_Keivan gratings"
 - "30-Nov-2020\_Neveen/Musca male 1\_back\_Keivan grating"
 - "30-Nov-2020\_Neveen/Musca male 2\_ back\_Keivan grating"
+
+
+## Expected happenings
+
+- Expected install time is approx 5 minutes
+- Expected runtime is approx. 5 minutes
+- Expected output is a pdf file in the script-created folder. It also creates .csv files there
+
+
