@@ -24,7 +24,7 @@ Move your current working directory to this folder (cd {thisfolderpath})
 and evoke
 
 ```
-python analyse.py "data\_projector/02-Dec-2020\_Neveen/Musca female 1\_back\_Keivan grating"
+python analyse.py "data_projector/02-Dec-2020_Neveen/Musca female 1_back_Keivan grating"
 ```
 
 Having those " " quotes is important because there are spaces in the path. You can analyse many folders at once by giving in their paths space separated.
