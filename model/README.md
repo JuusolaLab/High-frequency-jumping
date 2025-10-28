@@ -1,6 +1,6 @@
 # Model
 # Overview
- full Musca model for photoreceptor-LMC 
+Musca model for simulating photoreceptor and LMC responses for given input. As an example we replicate Figure 4.
 
 # Hardware requirements
 
@@ -12,9 +12,9 @@ Tested and working with Matlab 2023b with Paraller Processing Toolbox and Statis
 
 # Installation
 Download code.
-Run model/BurstyCalculationExample.m
+Run BurstyCalculationExample.m
 
 # Example
 
-model/BurstyCalculationExample.m contains script for running the both photoreceptor and LMC model for Figure 4.
-model/Bursty_stim_photo_hres_200.mat contains example bursty input used in figure 4 for the model.
+BurstyCalculationExample.m contains script for running the both photoreceptor and LMC model for Figure 4.
+Bursty_stim_photo_hres_200.mat contains example bursty input used in figure 4 for the model.
