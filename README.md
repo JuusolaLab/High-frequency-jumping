@@ -1,25 +1,13 @@
 # High-frequency-jumping
 
 # Overview
-Code for paper "Synaptic high-frequency jumping synchronises vision to high-speed behaviour". Contain full Musca model for photoreceptor-LMC in model folder.
+Code for paper "Synaptic high-frequency jumping synchronises vision to high-speed behaviour". 
 
-# Hardware requirements
+# Sub parts
 
-The model needs enough RAM to store variables. 
+Model folder contains full Musca model for photoreceptor-LMC.
 
-# Software requirements
-
-Tested and working with Matlab 2023b with Paraller Processing Toolbox and Statistics and Machine Learning Toolbox.
-
-# Installation
-Download code.
-Run model/BurstyCalculationExample.m
-
-# Example
-
-model/BurstyCalculationExample.m contains script for running the both photoreceptor and LMC model for Figure 4.
-model/Bursty_stim_photo_hres_200.mat contains example bursty input used in figure 4 for the model.
-
+Baranalysis folder contains analysis software for narrowing bars.
 
 # Citation
 
