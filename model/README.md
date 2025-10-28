@@ -1,6 +1,6 @@
 # Model
 # Overview
-Musca model for simulating photoreceptor and LMC responses for given input. As an example we replicate Figure 4.
+Musca model for simulating photoreceptor and LMC responses for given input. As an example we replicate Figure 4b.
 
 # Hardware requirements
 
@@ -16,5 +16,5 @@ Run BurstyCalculationExample.m
 
 # Example
 
-BurstyCalculationExample.m contains script for running the both photoreceptor and LMC model for Figure 4.
+BurstyCalculationExample.m contains script for running the both photoreceptor and LMC model for Figure 4b.
 Bursty_stim_photo_hres_200.mat contains example bursty input used in figure 4 for the model.
