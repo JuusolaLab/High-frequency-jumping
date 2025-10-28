@@ -1,7 +1,8 @@
 # High-frequency-jumping
 
 # Overview
-Code for paper "Synaptic high-frequency jumping synchronises vision to high-speed behaviour". 
+
+"Synaptic high-frequency jumping synchronises vision to high-speed behaviour". 
 
 # Sub parts
 
