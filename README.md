@@ -2,13 +2,11 @@
 
 # Overview
 
-"Synaptic high-frequency jumping synchronises vision to high-speed behaviour". 
+This repository contains various code used in "Synaptic high-frequency jumping synchronises vision to high-speed behaviour" paper. 
 
-# Sub parts
+Model: This folder contains sripts and functions to simulate Musca photoreceptor-LMC model.
 
-Model folder contains full Musca model for photoreceptor-LMC.
-
-Baranalysis folder contains analysis software for narrowing bars.
+Baranalysis: Folder contains analysis software for narrowing bars.
 
 # Citation
 
