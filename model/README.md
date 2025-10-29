@@ -11,8 +11,11 @@ The model requires a computer with sufficient RAM to store simulation variables.
 # Software requirements
 
 The model has been tested and verified using:
+
 -MATLAB R2023b
+
 -Parallel Computing Toolbox
+
 -Statistics and Machine Learning Toolbox
 
 Earlier versions of MATLAB may also work but have not been officially tested.
