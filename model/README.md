@@ -31,3 +31,6 @@ BurstyCalculationExample.m
 
 Bursty_stim_photo_hres_200.mat
   -Contains the example bursty stimulus input used in the model.
+
+DotCalculationExample.m
+  -Demonstrates how to simulate both photoreceptor and LMC responses used in Figure 6 including the static and quasiclassic case.
