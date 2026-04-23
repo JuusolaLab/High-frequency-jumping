@@ -1,10 +1,17 @@
 %Script for calculating LMC response after photoreceptor latency
-PhotoParameters;% Photoreceptor parameters
+
+%Quasi classic case as a single photoreceptor used as 6 photoreceptors
+% AfterLatency_b =AfterLatency_a;
+% AfterLatency_a =repmat(AfterLatency_a(1,:),6,1);%for using same photorecptor as input
+
+Photoanalysis2%Photoreceptor parameters
 N_microvilli = 54000;%Number of microvilli
 Diameters = [1.5 1.3 1.5 1.3 1.3 1.5 1.1];%Rhabdomere diameters
 fs =2000;
 samplerate =fs;
 Photovoltage =zeros(size(AfterLatency_a,1),datalength);%R1-R6 photoreceptor voltages
+LightSeries =zeros(size(AfterLatency_a,1),datalength);%R1-R6 light input
+
 tt =(0:30)/fs;% time for conductance quantal response
 %Setup the loop
 gShabOrig=param.gShab;
@@ -28,6 +35,7 @@ for k =1:6
     
     Data{k}.voltage =Mdata.y(1:datalength,1);
     Photovoltage(k,:) =Mdata.y(1:datalength,1);
+    LightSeries(k,:)= Data{k}.light_series(:,k)';
 end
 Data = cell2struct(Data,Datafields,1);
 

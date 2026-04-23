@@ -1,4 +1,4 @@
-function [ Data] =Lightmodelsimplewithfeedback2(modelparam,Data)
+function [ Data] =Lightmodelsimplewithfeedback2dot(modelparam,Data)
 %Lightmodelsimplewithfeedback simulate light absorbtion based on light
 %intensity taking account microsaccadic movement
 
@@ -47,12 +47,17 @@ for i = 1:steps
     if(Data.xpos(i)~= Data.xpos(i+1))
         Data.Map = MultipleFields(modelparam.MU+repmat([ Data.xpos(i+1)*modelparam.AngleScale(1) Data.xpos(i+1)*modelparam.AngleScale(2)],size(modelparam.MU,1),1),modelparam.hw-modelparam.hwmd *Data.xpos(i+1),modelparam.amplitude+modelparam.amplitudemd*Data.xpos(i+1),modelparam.xdim,modelparam.ydim,Data.lensposc,Data.lensnormalc,modelparam.mappos, modelparam.mapsize);
     end
-     Data.Mapvalue(i,:) = sum(Data.Map,[1 2]);
-      
+    bar_x_pos =modelparam.xstartpos+round((i-1)*modelparam.barspeed); %Dot position
+    Barpos =modelparam.barpos;
+    Barpos(:,1) =Barpos(:,1)+bar_x_pos; %Dot position
+
+    Data.light_series(i,:)  = BarVideo(Data.Map,Barpos , 1,modelparam.barangle, 1); %Calculate light intensities for dot
+
+
     %Loop through ommatidium photoreceptors
     for k =1:n_photoreceptors
         %Photon count absorbed
-        N_photon = round(Data.light_series(i)* Data.Mapvalue(i,k)*modelparam.LightScale);
+        N_photon = round(Data.light_series(i,k)*modelparam.LightScale);
         %Calculate number of activate microvilli
         if(length(modelparam.N_micro)>1)
                Active_microvilli = modelparam.N_micro(k)+sum(Data.Refractory_situation(1:i,k)-Data.Absorbtions(1:i,k)); % Microvilli from refractory state to active state

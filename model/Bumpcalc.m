@@ -1,9 +1,6 @@
 function [BumpShape BumpDuration] = Bumpcalc(A,n,tao,tt)
-%BUMPCALC Calculates the shape of gamma bump. 
-%A area of bump
-%n gamma shape of bump
-%tao gamma time constant of bump
-%tt time vector
+%BUMPCALC Summary of this function goes here
+%   Detailed explanation goes here
 BumpShape = (( tt./tao ).^n) .* exp(-tt./tao)/tao /gamma(n+1)*tt(2);
 I_in                = BumpShape;
 [BumpMax, BumpMaxIn]= max(I_in);
