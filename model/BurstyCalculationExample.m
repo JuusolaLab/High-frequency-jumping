@@ -3,7 +3,7 @@
 load Bursty_stim_photo_hres_200.mat;% load for LMC 200 Hz bursty
 ImpulseInput = ImpulseInput(1:8000); %Simulate 2 first repeates of stimulus
 MultipleRhabdomerewithScreen %Simulate the photoreceptor quantal sampling process with ray tracing and microsaccades 
-CombinedAfterLatency %Simulates photoreseptor voltage 
+o %Simulates photoreseptor voltage 
 Xstim =Photovoltage;
 PhotoLMCsimulationFeedback6%LMC simulations for LMC voltage with feedback 
 figure
