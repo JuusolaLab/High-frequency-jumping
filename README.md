@@ -11,7 +11,8 @@ This repository contains the following components: See full details in folders, 
 
 - BarAnalysis/
       Includes software and scripts for analysing visual responses to narrowing bar stimuli.
-
+- BehaviourAnalysis/
+      Includes a scripts for analysing visual behaviour statistics.
 
 
 
